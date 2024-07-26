@@ -11,10 +11,12 @@ import {
 } from "react-router-dom";
 import Upload from "./components/Upload.jsx";
 import SecureUpload from "./components/SecureUpload.jsx";
+import Home from "./components/Home.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
+      <Route path="/home" element={<Home />} />
       <Route path="/upload" element={<Upload />} />
       <Route path="/secure-upload" element={<SecureUpload />} />
     </Route>
